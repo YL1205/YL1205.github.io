@@ -1,0 +1,385 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CUSP Capstone Circular</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900|Rock+Salt" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="studio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+
+        a {
+            text-decoration: none
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img src="images/cusplogo.png" id="logo"></div>
+        <ul class="navigation">
+            <li><a href="#one">HOME</a></li>
+            <li><a href="#two">OVERVIEW</a></li>
+            <li><a href="#three">DATA</a></li>
+            <li><a href="#four">METHODS</a></li>
+            <li><a href="#five">RESULTS</a></li>
+            <li><a href="#six">TEAM</a></li>
+            <li><a href="https://github.com/YL1205/circularpaper/blob/master/Assessing%20the%20Circular%20Economy%20Opportunity%20in%20NYC%20III%20(1).pdf">REPORT</a></li>
+            <li><a href="https://github.com/Fyfy1996/NYC_circular_econ">CODE</a></li>
+        </ul>
+    </nav><!-- end navbar -->
+    <div id="menu-icon" onclick="toggleOpenClass()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="lower">
+
+        <section id="one">
+            <div class="inner">
+                <div class="container">
+
+                    <div class="accessing">
+                        Accessing the Circular Economy Oppotunity in NYC
+                    </div>
+                    <div class="semester">NYU CUSP Capstone Project 2020</div>
+                </div>
+            </div><!-- end inner, section 1-->
+        </section><!-- end section one -->
+
+        <section id="two">
+            <div class="inner">
+
+                <div class="con">
+                    <div class="f">
+                        <div class="ti">
+                            OVERVIEW
+                        </div>
+                        <div class="symbol">
+                            /
+                        </div>
+                    </div><!-- end f-->
+                    <div class="sub">
+                        OUR MOTIVATION
+                    </div>
+
+                    <div class="motivation">
+                        According to a new analysis by the global risk consulting firm Verisk Maplecroft, the United States, with 4 percent of the world's population, produces 12 percent of the world's municipal solid waste with only a recycling rate 35 percent(Smith, 2019). As one of the biggest cities in the country, New York City should take primary responsibility for this problem. The incomplete waste collection and recycling systems have left the town missing out on many reusable resources, which could generate substantial economic value. To better put those waste back into the economic cycle, the goal of this project was to understand and predict the waste generation pattern to introduce a business model and make recommendations for DSNY and related private sectors to corporate together to recycle more reusable waste.
+
+                    </div>
+
+                    <ul class="bullet">
+                        <li>[RQ1]The team's first mission is to develop a deep understanding of waste generation patterns during the normal period as well as to find out the relationship between socioeconomic background and waste generation. Based on that, the team could predict the volume of waste generation to make a proper business model and give suggestions. </li>
+                        <li>[RQ2]The second mission of the team is to explore how the normal waste generation pattern changed during the Covid-19 period on the geographical aspect and how socioeconomic factors play its role at this time. By digging deeper into pattern changes in both COVID-19 periods, the team implemented those insights into our business model and recommendations.</li>
+                    </ul>
+
+                    <ul class="bullet">
+                        <li>[H1] The team supposed the waste generation pattern in the normal period steadily fluctuates over the years. Community districts with higher median household income will generate more waste than community districts with a lower median household income. </li>
+                        <li>[H2] During the stay at home period, the team supposed the amount of residential refuse generated would skyrocket due to limited mobility in all five boroughs, paper, and mix recyclable would slightly decline due to more reuse than disposal. Neighborhoods with more residential zonings experienced a more significant increase in waste generation. High-income areas would see less of an increase because residents left the city to avoid pandemic hot zones, while more impoverished neighborhoods would see more of an increase because people can't afford to leave.</li>
+
+                    </ul>
+                </div><!--end con -->
+            </div><!-- end inner, section 2-->
+        </section><!-- end section2 -->
+
+        <section id="three">
+            <div class="inner">
+
+
+                <div class="f">
+                    <div class="ti">
+                        DATA
+                    </div>
+                    <div class="symbol">
+                        /
+                    </div>
+                </div><!--end f-->
+                <div class="su">
+                    NYC OPEN DATA PORTAL
+                </div>
+                <div class="row">
+                    <div class=" two-columns">
+                        <i class="fa fa-bar-chart" style="font-size:60px"></i>
+                        <a href="https://data.cityofnewyork.us/City-Government/DSNY-Monthly-Tonnage-Data/ebb7-mvp5">
+                        <h3>DSNY Monthly Tonnage Data</h3>
+                        </a>
+                        <div class="d1">
+                            DSNY Monthly Tonnage Data provides monthly collection tonnages that the Department of Sanitation collects from NYC residences and institutions.This data set is collected in community district scope and in frequency of every month. Three main types of waste(refuse, paper and MGP) are reported in this data set, while there is also organic waste data but with many NAs.
+                            Columns of this data set include boroughs, community district id, tons of refuse, tons of paper, tons of MGP, tons of source separated organic waste, etc. The data set has 11 columns in total.
+                        </div>
+                    </div>
+                    <div class=" two-columns">
+                        <i class="fa fa-users" style="font-size:60px"></i>
+                        <a href="https://communityprofiles.planning.nyc.gov/">
+                        <h3>NYC Planning | Community Profiles</h3>
+                        </a>
+                        <div class="d1">This interactive data portal contains demographic, economic data and other resources describing New York City’s 59 community districts, each represented by a community board. Among all the profile data provided by this datasource, only Community District Median Income(based on American Community Survey 2013-2017) and Population (based on 2010 Census) were selected for this project exclusively as demographic features. </div>
+                    </div>
+                </div><!-- end row-->
+
+            </div><!-- end inner, section 3-->
+        </section>
+
+        <section id="four">
+            <div class="inner">
+                <div class="f">
+                    <div class="ti">
+                        METHODOLOGY
+                    </div><!--end 263blog -->
+                    <div class="symbol">
+                        /
+                    </div>
+                </div><!--end f-->
+                <div class="su">
+                    NORMAL PERIOD vs COVID
+                </div>
+
+                <div class="paint">
+                    <div class="paintpic">
+                        <div class="labelone">
+                            01
+                        </div>
+                    </div><!--end paintpic-->
+                    <div class="paragraph left">
+                        <div class="titleblue">
+                            General Waste Analysis
+                        </div><!--end titleblue-->
+                        <div class="words">
+                            <ul class="methbullet">
+                                <li class="bo">Time Series Analysis</li>
+                                The team used the NYC tonnage dataset and focused on the near-term data which were after January 2010. We summed up the data into borough scale while originally the data were in community district scale. Then we applied a basic time series model to visualize the trend of all types of waste generation and how they changed during the last decade. And the team also created a heatmap of correlation between three main waste types.
+                                <li class="bo">Social-Economic Spatial Analysis</li>
+                                We merged demographic information with waste data. Then, we generated several heatmaps to visualize waste collection tonnage. Later, the team conducted clustering analysis seeking the relationship between median household income and per capita waste generation among all community districts. After that, the team applied a regression model from the statsmodels module to community district clusters found in the previous clustering result to test the initial hypothesis about waste-demographic correlation and made conclusions.
+                            </ul>
+
+                        </div><!-- end words-->
+
+                    </div><!--end paragraph-->
+                </div><!--end paint -->
+                <div class="paint">
+                    <div class="paragraph right">
+                        <div class="titleblue">
+                            COVID-19 Waste Analysis
+                        </div><!--end titleblue-->
+                        <ul class="methbullet">
+                            <li class="bo">Time Series Analysis </li>
+                            Regarding the current shock of COVID-19, we built a time series model to get the predicted value during March to June and then compared the prediction with the actual values of waste generation. Considering the large proportion of refuse waste and high correlation among these three wastes, we chose refuse waste as an example and built a time series model for each boro.
+                            <li class="bo">Social-Economic Spatial Analysis</li>
+                            The analytical methodology in this section is identical to section 6.1.2. But in this section, the team will use the analysis result to test different sets of hypotheses under the timeframe of Covid-19 NYC Stay At Home order period.
+                        </ul>
+
+
+                    </div><!--end paragraph-->
+                    <div class="paintpic">
+                        <div class="labeltwo">
+                            02
+                        </div>
+                    </div><!--end paintpic-->
+                </div><!--end paint -->
+                <div class="paint">
+                    <div class="paintpic">
+                        <div class="labelone">
+                            03
+                        </div>
+                    </div><!--end paintpic-->
+                    <div class="paragraph left">
+                        <div class="titleblue">
+                            Analysis on Suggestions and Potential Business models
+                        </div><!--end titleblue-->
+                        <ul class="methbullet">
+                            <li class="bo">Suggestions </li>
+                            Based on the previous analythese, the team estimated on what kind of waste is causing the most economic losses as well as looked at entities which have been playing important roles in the circular economy, including startups, academic institutions, venture capitals to help reduce the economic losses of waste. After that, the team also came up with related suggestions and a potential business model to give a more straightforward explanation.
+
+                    </div><!-- end words-->
+
+                </div><!--end paragraph-->
+            </div><!--end paint -->
+        </section>
+
+        <section id="five">
+            <div class="inner">
+                <div class="f">
+                    <div class="ti">
+                        RESULTS
+                    </div><!--end 263blog -->
+                    <div class="symbol">
+                        /
+                    </div>
+                </div><!--end f-->
+                <div class="su">
+                    MAIN OUTCOMES
+                </div>
+                <div class="scroll">
+                    <h1>General Waste Analysis</h1>
+                    <h2>1. Time Series Analysis</h2>
+                    <div class="resultpic">
+                        <img src="images/f1-3.png" />
+                        <img src="images/f4.png" />
+                        <img src="images/table1.png" />
+                        <img src="images/f6-8.png" />
+                    </div>
+
+                    <p>From the visualizations in Figure 1-3, we can see that Refuse waste occupies the largest proportion in all wastes. There is also seasonality in all five boroughs while there isn’t any obvious trend in these time series data. People tend to generate more waste during summer time than winter time. Moreover, due to the same-direction change of all these three types of wastes shown in the above visualization, there are high correlations (Figure 4) among the three types, which can also simplify our previous model of time series</p>
+                    <p>The results of the six time series models mentioned in par are shown in Table 1. The real and predicted values are shown in Figure 6-8.</p>
+                    <p>As we can see above, LSTM structure has captured the fluctuation of the time series successfully. All the five boros have similar trends as well as seasonality. The waste generation reached its maximum during the summer time  while in winter it reduced to its lowest point. This pattern may suggest different manipulation on waste and circular economy in different seasons.</p>
+                    <h2>2. Analysis on DSNY tonnage collection in space(2015-2019) </h2>
+                    <div class="resultpic">
+                        <img src="images/f712-1.png" />
+                        <img src="images/f11-12.png" />
+                        <img src="images/f13-14.png" />
+                        <img class="f15" src="images/f15.png" />
+                    </div>
+                    <p>In the clustering analysis, the silhouette-score from Gaussian Mixture equals 0.3988. The algorithm provided two clusters that it calculated to have relations, Figure 7.1.2-1 is a geographic representation of the two clusters.</p>
+                    <p>the first cluster(dark blue) contained most of the community districts that has lower household income, and the median household income in this cluster was $52,490 , and most of the community districts distributed in the 50k-65k range. (figure 11 in appendix). </p>
+                    <p>
+                        After applying regression model to this cluster, the result shows that there was a positive correlation between income and refuse generation per capita (figure 12 in appendix) with coefficient=0.3964, and  positive correlation between income and recyclable (paper + mix-recyclable) generation per capita (figure 13) with coefficient=0.8617.
+                        The second cluster (light yellow) contained most of the community districts that had higher household income and the median household income in this cluster was $105,616 (Figure 14).
+                    </p>
+                    <p>The result of regression analysis showed differences between the second and the first cluster. There was a negative correlation between income and refuse generation per capita (Figure 15 in appendix) with coefficient=-0.557; and positive correlation between income and recyclable (paper + mix-recyclable) generation per capita (figure 15) with coefficient=0.7175.</p>
+                    <p>From the above analysis result, we can conclude that Income does affect waste generation. In the lower income cluster, with the rise of household income, refuse generation per capita increases in tandem, so does recyclables (paper+mix-recyclables) generation per capita. But in the higher income cluster, refuse generation per capita decreases while household income rises even though the tandem of recyclables generation remains positive while income increases. In short, social economic background has different influences across various income levels, especially in refuse generation, but not much influences on recyclables generation.</p>
+                    <h1>Covid-19 Waste Analysis</h1>
+                    <h2>1. Time Series Prediction</h2>
+                    <p>Based on our time series model, it can be seen that all the boroughs except Manhattan had a surge in waste generation in COVID-19 periods, especially in June. This may be partly explained by the fact that people who lived outside Manhattan didn’t have to go to Manhattan for work during stay-at-home policy.</p>
+                    <h2>2. Analysis on DSNY tonnage collection in space(Stay At Home Period ~ March-June)</h2>
+                    <div class="resultpic">
+                        <img src="images/f19-21.png" />
+                        <img src="images/f722-1.png" />
+                        <img src="images/f22-24.png" />
+
+                    </div>
+                    <p>We applied the same concept as we used in section 7.1.2, Gaussian Mixture clustering with  silhouette-score equals 0.4702. The algorithm provided two clusters that it calculated to have relations, figure 7.2.2-1 is a geographic representation of the two clusters, In the first cluster(dark blue), it contained community districts that had median households as $53,205, and most of the community districts distributed in the 50k-65k range. (figure 19)</p>
+                    <p>The result of regression model shows that there was a moderate positive correlation between income and refuse generation per capita (figure 20) with coefficient=0.3638, and  strong positive correlation between income and recyclable (paper + mix-recyclable) generation per capita (figure 21) with coefficient=0.8469.</p>
+                    <p>The second cluster (light yellow) contained most of the community districts that had higher household income and the median household income in this cluster was $115,993 (figure 22).</p>
+                    <p>The result of regression showed there was a strong negative correlation between income and refuse generation per capita (figure 23) with coefficient=-0.7784, and very weak negative correlation between income and recyclable (paper + mix-recyclable) generation per capita (figure 24 in appendix) with coefficient=-0.0136.</p>
+
+                </div> <!--end scroll-->
+
+            </div><!-- end inner, section 5-->
+        </section>
+
+        <section id="six">
+            <div class="inner">
+                <div class="blue">
+                    <div class="huge">
+                        <div class="f">
+                            <div class="ti">
+                                THE TEAM
+                            </div>
+                            <div class="symbol">
+                                /
+                            </div>
+                        </div><!--end f-->
+                        <div class="su">
+                            ABOUT US
+                        </div>
+                        <div class="people">
+                            <div class="peop">
+                                <div class="peo_pic">
+                                    <img src="images/li.png" />
+                                </div>
+                                <div class="name">
+                                    Yang Li
+                                    <a href="https://www.linkedin.com/in/liyanggg/">
+                                     <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    Project Team Member
+                                </div>
+
+                            </div><!--end peop -->
+                            <div class="peop">
+                                <div class="peo_pic">
+                                    <img src="images/rj.png" />
+                                </div>
+                                <div class="name">
+                                    Rongjian Yang
+                                    <a href="https://www.linkedin.com/in/rongjianyang/">
+                                     <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    Project Team Member
+                                </div>
+                            </div><!-- end peop -->
+                        </div><!-- end people -->
+                        <div class="people">
+                            <div class="peop">
+                                <div class="peo_pic">
+                                    <img src="images/fan.png" />
+                                </div>
+                                <div class="name">
+                                    Fan Yong
+                                    <a href="https://www.linkedin.com/in/yongfan/">
+                                     <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    Project Team Member
+                                </div>
+                            </div><!-- end peop-->
+                            <div class="peop">
+                                <div class="peo_pic">
+                                    <img src="images/martina.jpeg" />
+                                </div>
+                                <div class="name">
+                                    Martina Balestra
+                                    <a href="https://www.linkedin.com/in/martina-balestra/">
+                                     <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                     </a>
+                                </div>
+                                <div class="description">
+                                    Project Mentor
+                                </div>
+                            </div><!-- end peop-->
+                        </div><!--end people-->
+
+
+                    </div><!-- end huge -->
+                    <div class="bigtwo">
+                        <div class="man">
+                            <div class="spon_big">
+                                <img src="images/dsny.jpg" />
+                            </div>
+                            <div class="name">
+                                DSNY
+                            </div>
+                            <div class="description">
+                                Project Sponsor
+                            </div>
+                        </div><!-- end man-->
+                        <div class="peop">
+                            <div class="spon_big">
+                                <img src="images/edc.png" />
+                            </div>
+                            <div class="name">
+                                NYCEDC
+                            </div>
+                            <div class="description">
+                                Project Sponsor
+                            </div>
+                        </div><!-- end women-->
+
+                    </div><!-- end bigtwo-->
+                </div><!-- end blue-->
+            </div><!-- end inner, section 6-->
+        </section>
+
+    </div><!-- end lower -->
+    <div class="footer">
+        Copyright @ NYU CUSP Capstone Project Group
+    </div>
+    <script>
+
+        function toggleOpenClass() {
+            document.getElementsByClassName("navbar")[0].classList.toggle("open");
+        }
+
+    </script>
+</body>
+</html>
